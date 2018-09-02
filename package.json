@@ -4,7 +4,8 @@
   "description": "Regiistek website presentation",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "sass": "node-sass --watch --include-path sass assets/sass/main.sass assets/css/main.css"
   },
   "repository": {
     "type": "git",
