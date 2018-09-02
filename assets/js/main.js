@@ -30,6 +30,14 @@ $(document).ready(function () {
         content.css('padding-left', '0')
     }
     
+    $(window).resize(function() {
+        if ($(window).width() < 1100) {
+            content.css('padding-left', '0')
+        } else {
+          content.css('padding-left', sidebar.css('width'))
+        }
+    });
+    
     $('#preloader').fadeOut()
     setTimeout(function(){
         $('.flex-row').fadeIn()

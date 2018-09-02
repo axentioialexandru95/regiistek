@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden !important; }
 
 @keyframes animateImageBorder {
   0% {
@@ -207,7 +208,7 @@ body {
     .sidebar-menu .menu-list a {
       width: 100%;
       padding-left: 30px;
-      font-size: 18px;
+      font-size: 14px;
       text-decoration: none;
       color: black; }
     .sidebar-menu .menu-list .active-menu {
@@ -232,7 +233,6 @@ body {
         transition: 0.1s all ease-in-out;
         color: #1155CA; }
   .sidebar-menu .announcements {
-    margin-top: 50px;
     height: 250px;
     position: relative; }
     .sidebar-menu .announcements .overlay {
@@ -316,7 +316,7 @@ body {
       left: 50%;
       transform: translateX(-50%); }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1100px) {
   .announcements {
     margin-top: 0px !important; }
   #close-sidebar {
@@ -389,3 +389,54 @@ body {
     .copyright a:hover {
       transition: 0.1s all ease-in-out;
       color: #1155CA; }
+
+@media screen and (max-width: 1360px) {
+  .ordinary-image {
+    width: 320px; }
+  .content .header .ordinary-text-left {
+    margin-top: 0px; } }
+
+@media screen and (max-width: 1220px) {
+  .ordinary-image {
+    width: 320px; }
+  .content .header .ordinary-text-left {
+    width: 400px; }
+    .content .header .ordinary-text-left p {
+      font-size: 14px; } }
+
+@media screen and (max-height: 880px) {
+  .sidebar-menu .initial-text {
+    margin-top: 10px; }
+  .sidebar-menu .brand img {
+    width: 100px; } }
+
+@media screen and (max-height: 825px) {
+  .sidebar-menu .brand img {
+    margin-top: 20px; }
+  .sidebar-menu .menu-list {
+    margin-top: 0px; } }
+
+@media screen and (max-height: 760px) {
+  .sidebar-menu .announcements .overlay-text h4 {
+    font-size: 16px !important; }
+  .sidebar-menu .announcements {
+    height: 170px; }
+  .announcements .cta {
+    font-size: 14px;
+    padding: 5px 15px; } }
+
+@media screen and (max-height: 680px) {
+  .sidebar-menu .announcements {
+    height: 150px; }
+  .sidebar-menu .social {
+    margin: 0px !important; }
+  .sidebar-menu .language {
+    margin-top: 0px; } }
+
+@media screen and (max-height: 620px) {
+  .sidebar-menu .announcements {
+    display: none; }
+  .sidebar-menu .social {
+    margin-top: 20px !important; }
+  .sidebar-menu .language {
+    margin-top: 0px; } }
