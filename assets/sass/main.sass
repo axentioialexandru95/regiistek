@@ -399,6 +399,72 @@ body
             transition: 0.1s all ease-in-out
             color: $blue
 
+.about-row
+    height: 900px
+    background: 
+        attachment: fixed
+        size: cover
+        image: url('/assets/images/skies.jpg')
+    .left-text
+        margin-left: 60px
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        width: 700px
+    .social a
+        margin-right: 20px
+        font-size: 32px
+        color: black
+        text-decoration: none
+        &:hover
+            transition: 0.1s all ease-in-out
+            color: $blue
+
+.services
+    height: 900px
+    background:
+        size: cover
+        image: url('/assets/images/city-landscape1.jpeg')
+    position: relative
+    color: white
+    .overlay
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        background: rgba(black,0.7)
+    .title
+        padding-top: 100px
+        position: relative
+        z-index: 5
+        left: 170px
+        font-size: 24px
+        font-weight: 600
+.list
+    display: flex
+    justify-content: center
+.services-list
+    width: 33%
+    position: relative
+    margin: 50px 50px
+    z-index: 5
+    color: rgba(white,0.9)
+    .service
+        margin-bottom: 50px
+        position: relative
+    .service-title
+        font-size: 24px
+        &:before
+            content: ''
+            position: absolute
+            left: -17px
+            top: 8px
+            background: $blue
+            width: 10px
+            height: 20px
+.careers
+    height: 900px
 @media screen and (max-width: 1360px)
     .ordinary-image
         width: 320px
