@@ -5,6 +5,8 @@ body
     margin: 0
     font-family: Arial, Helvetica, sans-serif
     overflow-x: hidden !important
+    position: relative
+    z-index: -5
 
 @keyframes animateImageBorder
   0%
@@ -365,6 +367,30 @@ body
         background: rgba(black, 0.6)
         z-index: 5
     
+.contact-us
+    position: relative
+    height: 300px
+    background: 
+        size: cover
+        attachment: fixed
+        image: url('/assets/images/city-landscape.jpeg')
+    .overlay
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background: rgba(black, 0.4)
+        z-index: 5
+    .overlay-text
+        text-align: center
+        color: white 
+        position: absolute
+        z-index: 6
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+
 .careers-row
     position: relative
     height: 300px
@@ -459,12 +485,44 @@ body
             content: ''
             position: absolute
             left: -17px
-            top: 8px
+            top: 12px
             background: $blue
             width: 10px
-            height: 20px
+            height: 10px
 .careers
     height: 900px
+    .career-row
+        height: 450px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    .career-column
+        border: 1px solid rgba(black,0.05)
+        padding: 50px
+        width: 50%
+        p
+            margin-top: 40px
+        ul
+            margin-top: 30px 
+            list-style: none
+            padding: 0
+            line-height: 40px
+            li
+                margin-left: 10px
+                padding-left: 5px
+                position: relative
+            li:before
+                content: ''
+                background: $blue
+                width: 5px
+                height: 5px
+                position: absolute
+                left: -10px
+                top: 17px
+                border-radius: 40px
+                
+                
+            
 @media screen and (max-width: 1360px)
     .ordinary-image
         width: 320px
