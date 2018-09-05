@@ -37,6 +37,12 @@ $(document).ready(function () {
           content.css('padding-left', sidebar.css('width'))
         }
     });
+
+    $('#background').fadeIn(500, null, function(){
+        $('#overlay').fadeIn(2000, null, function(){
+            $('#content').fadeIn(2000)
+        })
+    })
     
     $('#preloader').fadeOut()
     setTimeout(function(){
