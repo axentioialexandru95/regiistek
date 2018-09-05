@@ -357,7 +357,62 @@ body {
       transition: 0.1s all ease-in-out;
       box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3); }
 
+@media only screen and (max-width: 600px) {
+  #content img {
+    width: 280px; }
+  .copyright {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 1270px) {
+  .contact .left-image .left-image-overlay .content {
+    padding-left: 35%  !important; } }
+
+@media screen and (max-width: 800px) {
+  .contact {
+    height: auto !important; }
+    .contact textarea {
+      width: 100%; }
+  .contact .left-image {
+    width: 100% !important;
+    height: 650px !important; }
+  .contact .contact-form {
+    width: 100% !important; }
+  .careers {
+    height: auto !important; }
+    .careers h1 {
+      margin-top: 20px; }
+  .careers .career-row {
+    height: auto !important; }
+  .careers .career-column {
+    padding-left: 70px !important;
+    width: 100% !important; } }
+
 @media only screen and (max-width: 1100px) {
+  #careers .small-navbar {
+    color: black !important; }
+  #about .background {
+    display: none; }
+  .services {
+    height: auto !important; }
+  .services .title {
+    left: 0px !important;
+    padding-left: 30px; }
+  .list {
+    flex-wrap: wrap; }
+  .services-list {
+    min-width: 300px; }
+  .about-row {
+    height: 600px !important;
+    background-position: -480px 0px; }
+    .about-row .left-text {
+      width: 290px !important;
+      margin-left: 30px !important; }
+    .about-row h2 {
+      font-size: 18px; }
+    .about-row p {
+      font-size: 12px; }
+  #about .small-navbar {
+    color: black !important; }
   .announcements {
     margin-top: 0px !important; }
   #close-sidebar {
@@ -375,7 +430,7 @@ body {
   .sidebar-menu {
     display: none; }
   .small-navbar {
-    position: absolute;
+    position: fixed;
     display: block;
     left: 30px;
     font-size: 24px;
@@ -529,7 +584,8 @@ body {
   .careers .career-column {
     border: 1px solid rgba(0, 0, 0, 0.05);
     padding: 50px;
-    width: 50%; }
+    width: 50%;
+    min-width: 400px; }
     .careers .career-column p {
       margin-top: 40px; }
     .careers .career-column ul {
@@ -552,7 +608,7 @@ body {
         border-radius: 40px; }
 
 .contact {
-  height: 800px;
+  height: 900px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
