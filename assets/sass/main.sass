@@ -521,7 +521,102 @@ body
                 top: 17px
                 border-radius: 40px
                 
-                
+.contact    
+    height: 800px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .left-image
+        min-width: 400px
+        height: 100%
+        width: 50%
+        position: relative
+        background: 
+            size: cover
+            position: center
+            image: url('/assets/images/buildings.jpeg')
+        .left-image-overlay
+            background: rgba(black,0.78)
+            position: absolute
+            left: 0
+            bottom: 0
+            top: 0
+            right: 0
+            .content
+                color: white
+                position: relative
+                z-index: 5
+                top: 50%
+                left: 30%
+                transform: translate(-50%, -50%)
+                div
+                    margin-bottom: 10px
+                a
+                    text-decoration: none
+                    color: $blue
+                    font-weight: bold
+                    &:hover
+                        color: white
+                        transition: 0.1s all ease-in-out
+                h3
+                    font-size: 24px
+                    position: relative
+                p,
+                    margin: 30px 0px
+
+                i
+                    color: white
+                    position: absolute
+                    left: -35px
+                    top: 5px
+                    font-size: 18px
+                .call-us h3
+                    margin-bottom: 30px
+                .support h3
+                    margin-top: 30px
+                    margin-bottom: 30px
+
+    .contact-form  
+        min-width: 400px 
+        width: 50%
+        padding-top: 50px
+        text-align: center
+    form
+        margin: 100px 20%
+.input-group
+    width: 100%
+    position: relative
+    text-align: center
+    margin-bottom: 50px
+label
+    font-size: 12px
+    position: absolute
+    top: -20px
+    left: 0
+    color: rgba(black, 0.7)
+input   
+    padding: 10px 
+    width: 100%
+    &::placeholder
+        font-size: 14px
+        color: rgba(black,0.3)
+
+textarea
+    padding: 10px
+    &::placeholder
+        font-size: 14px
+        color: rgba(black,0.3)
+
+.submit-button
+    background: $blue
+    color: white
+    border: none
+    border-radius: 0
+    padding: 15px 30px
+    cursor: pointer
+    &:hover
+        transition: 0.1s all ease-in-out
+        box-shadow: 0px 5px 5px rgba(black, 0.2)
             
 @media screen and (max-width: 1360px)
     .ordinary-image
