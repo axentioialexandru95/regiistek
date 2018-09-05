@@ -370,8 +370,6 @@ body {
 @media screen and (max-width: 800px) {
   .contact {
     height: auto !important; }
-    .contact textarea {
-      width: 100%; }
   .contact .left-image {
     width: 100% !important;
     height: 650px !important; }
@@ -688,6 +686,7 @@ input {
     color: rgba(0, 0, 0, 0.3); }
 
 textarea {
+  width: 100%;
   padding: 10px; }
   textarea::placeholder {
     font-size: 14px;
